@@ -7,4 +7,10 @@ rosdep update &&
 echo "source /opt/ros/kinetic/setup.bash" >> ~/.bashrc &&
 source ~/.bashrc &&
 source /opt/ros/kinetic/setup.bash &&
-yes | sudo apt install python-rosinstall python-rosinstall-generator python-wstool build-essential
+yes | sudo apt install python-rosinstall python-rosinstall-generator python-wstool build-essential &&
+mkdir -p ~/catkin_ws/src &&
+cd ~/catkin_ws/src &&
+source ~/.bashrc &&
+catkin_init_workspace &&
+cd ~/catkin_ws &&
+catkin_make
