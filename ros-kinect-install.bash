@@ -13,4 +13,5 @@ cd ~/catkin_ws/src &&
 source ~/.bashrc &&
 catkin_init_workspace &&
 cd ~/catkin_ws &&
-catkin_make
+catkin_make &&
+echo "source /home/`echo $USER`/catkin_ws/devel/setup.bash" >> ~/.bashrc
